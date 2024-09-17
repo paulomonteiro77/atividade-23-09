@@ -24,8 +24,8 @@ const Jogos = () => {
   ];
 
   return (
-    <table>
-      <thead>
+    <table border={1} align="center">
+      <thead>/
         <tr>
           <th>Nome do Jogo</th>
           <th>Plataforma</th>

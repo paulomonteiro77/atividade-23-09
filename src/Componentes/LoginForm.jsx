@@ -22,8 +22,8 @@ const LoginForm = () => {
   };
 
   return (
-    <form onSubmit={handleSubmit}>
-      <div>
+    <form onSubmit={handleSubmit} style={styles.form}>
+      <div style={styles.inputGroup}>
         <label htmlFor="username">Username:</label>
         <input
           type="text"
@@ -34,7 +34,7 @@ const LoginForm = () => {
           required
         />
       </div>
-      <div>
+      <div style={styles.inputGroup}>
         <label htmlFor="password">Password:</label>
         <input
           type="password"
@@ -45,7 +45,7 @@ const LoginForm = () => {
           required
         />
       </div>
-      <div>
+      <div style={styles.inputGroup}>
         <label htmlFor="confirmPassword">Confirm Password:</label>
         <input
           type="password"
@@ -56,9 +56,26 @@ const LoginForm = () => {
           required
         />
       </div>
-      <button type="submit">Login</button>
+      <button type="submit" style={styles.button}>Login</button>
     </form>
   );
+};
+
+const styles = {
+  form: {
+    display: 'flex',
+    flexDirection: 'column',
+    alignItems: 'center',
+    justifyContent: 'center',
+    height: '100vh',
+  },
+  inputGroup: {
+    marginBottom: '15px',
+  },
+  button: {
+    padding: '10px 20px',
+    fontSize: '16px',
+  },
 };
 
 export default LoginForm;

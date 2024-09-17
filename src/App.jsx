@@ -1,41 +1,19 @@
-import { useState } from 'react'
-import reactLogo from './assets/react.svg'
-import viteLogo from '/vite.svg'
-import './App.css'
-import Componentes from './Componentes/LoginForm.jsx'
+import React from 'react';
+import Jogos from './Componentes/Jogos';
+import LoginForm from './Componentes/LoginForm';
+import ImageComponent from './Componentes/ImageComponent';
+import CheckboxComponent from './Componentes/CheckboxComponent';
 
-function App() {
-  const [count, setCount] = useState(0)
-  const LoginForm = () => 
-
+const App = () => {
   return (
-    <>
-      <div>
-        <a href="https://vitejs.dev" target="_blank">
-          <img src={viteLogo} className="logo" alt="Vite logo" />
-        </a>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div>
-      <h1>Vite + React</h1>
-      <div className="card">
-        <button onClick={() => setCount((count) => count + 1)}>
-          count is {count}
-        </button>
-        <p>
-          Edit <code>src/App.jsx</code> and save to test HMR
-        </p>
-        <LoginForm />
-      </div>
-      <p className="read-the-docs">
-        Click on the Vite and React logos to learn more
-      </p>
-    </>
-  )
-}
+    <div>
+      <h1>Meus Componentes</h1>
+      <Jogos /> 
+      <LoginForm /> 
+      <ImageComponent />
+      <CheckboxComponent />
+    </div>
+  );
+};
 
-export default App
-
-
-
+export default App;
