@@ -25,7 +25,7 @@ const Jogos = () => {
 
   return (
     <table border={1} align="center">
-      <thead>/
+      <thead>
         <tr>
           <th>Nome do Jogo</th>
           <th>Plataforma</th>
